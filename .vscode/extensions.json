@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "saikou9901.evilinspector",
+    "visualstudioexptteam.vscodeintellicode",
+    "christian-kohler.path-intellisense",
+    "shardulm94.trailing-spaces"
+  ]
+}
