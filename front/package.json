@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint-fix": "eslint --fix src/**/*.ts*"
+    "lint:fix": "eslint --fix src/**/*.ts*",
+    "prettier:fix": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
