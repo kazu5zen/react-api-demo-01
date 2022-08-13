@@ -20,6 +20,8 @@ module.exports = {
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
     'import/extensions': ['error', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'prettier/prettier': 'error',
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
   settings: {
     react: {
