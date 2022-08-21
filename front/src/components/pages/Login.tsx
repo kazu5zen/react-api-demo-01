@@ -1,18 +1,17 @@
 import { FC, memo } from 'react';
-import { useHistory } from 'react-router-dom';
+import Footer from '../ui-parts/Footer/Footer';
+import Header from '../ui-parts/Header/Header';
+import LoginPanel from '../ui-parts/LoginPanel/LoginPanel';
 
 export const Login: FC = memo(() => {
-  const history = useHistory();
-
-  const onClickLogin = () => history.push('/graph-display');
-
   return (
-    <div>
-      <h1>ログインページです</h1>
-      <button type="button" onClick={onClickLogin}>
-        ログイン
-      </button>
-    </div>
+    <>
+      <Header />
+      <main>
+        <LoginPanel />
+      </main>
+      <Footer />
+    </>
   );
 });
 
