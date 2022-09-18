@@ -2,8 +2,7 @@
 
 ### Docker の立ち上げ
 
-1. 「docker-compose build」をルートディレクトリで実行
-2. 「docker-compose up -d」をルートディレクトリで実行
+1. 「docker-compose up -d --build」をルートディレクトリで実行
 
 ### モジュールのインストール＆起動
 
