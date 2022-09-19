@@ -7,8 +7,8 @@
 ### モジュールのインストール＆起動
 
 1. 「docker exec -it node sh」をルートディレクトリで実行
-2. docker 内の front ディレクトリで「yarn」を実行
-3. docker 内の front ディレクトリで「yarn start」を実行
+2. docker 内の front ディレクトリで「npm ci」を実行
+3. docker 内の front ディレクトリで「npm start」を実行
 
 ### アクセス
 
