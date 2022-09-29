@@ -1,4 +1,5 @@
 import { FC, memo } from 'react';
+import './PrimaryButton.css';
 
 type Props = {
   text: string;
@@ -8,7 +9,7 @@ type Props = {
 export const PrimaryButton: FC<Props> = memo((props) => {
   const { text, onClick } = props;
   return (
-    <button type="button" onClick={onClick}>
+    <button type="button" onClick={onClick} className="button-primary">
       {text}
     </button>
   );

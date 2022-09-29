@@ -14,7 +14,7 @@ export const TotalPopulationLine: FC<Props> = memo((props) => {
     labels.push(`${year}`);
   }
 
-  const datasets = totalPopulationList.map((e, _) => {
+  const datasets = totalPopulationList.map((e) => {
     return { label: e.name, data: e.values, borderColor: 'rgb(75, 192, 192)' };
   });
   const chartData: ChartData<'line'> = {

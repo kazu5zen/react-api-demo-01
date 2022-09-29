@@ -1,19 +1,10 @@
 import { FC, memo } from 'react';
+import './Footer.css';
 
-type Props = {
-  children?: React.ReactNode;
-};
-
-export const Footer: FC<Props> = memo((props) => {
-  const { children = '© 2022 kazu5zen' } = props;
-
-  const headerStyle = {
-    backgroundColor: 'lightgreen',
-    margin: 0,
-  };
+export const Footer: FC = memo(() => {
   return (
     <footer>
-      <p style={headerStyle}>{children}</p>
+      <p className="footer">© 2022 kazu5zen</p>
     </footer>
   );
 });

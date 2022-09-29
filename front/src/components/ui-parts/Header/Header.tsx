@@ -1,19 +1,10 @@
 import { FC, memo } from 'react';
+import './Header.css';
 
-type Props = {
-  children?: React.ReactNode;
-};
-
-export const Header: FC<Props> = memo((props) => {
-  const { children = '都道府県別の総人口推移グラフ閲覧' } = props;
-
-  const headerStyle = {
-    backgroundColor: 'lightgreen',
-    margin: 0,
-  };
+export const Header: FC = memo(() => {
   return (
     <header>
-      <h1 style={headerStyle}>{children}</h1>
+      <h1 className="header">グラフ閲覧デモ</h1>
     </header>
   );
 });

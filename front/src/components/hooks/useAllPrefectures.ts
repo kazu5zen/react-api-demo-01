@@ -25,8 +25,7 @@ export const useAllPrefectures = () => {
       .get<PrefecturesResponses>('https://opendata.resas-portal.go.jp/api/v1/prefectures')
       .then((res) => {
         setPrefecturesList(
-          // eslint-disable-next-line @typescript-eslint/no-unused-vars
-          res.result.map((result, _) => {
+          res.result.map((result) => {
             return { code: `${result.prefCode}`, name: result.prefName, isChecked: false } as Prefectures;
           })
         );

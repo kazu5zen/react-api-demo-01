@@ -3,6 +3,7 @@ import { useAuth } from '../../hooks/useAuth';
 import PrimaryButton from '../../ui-elements/Button/PrimaryButton';
 import UserNameInput from '../../ui-elements/Input/UserNameInput';
 import UserPasswordInput from '../../ui-elements/Input/UserPasswordInput';
+import './LoginPanel.css';
 
 export const LoginPanel: FC = memo(() => {
   const { login } = useAuth();
@@ -15,11 +16,15 @@ export const LoginPanel: FC = memo(() => {
   const onClickLogin = () => login(userId, password);
 
   return (
-    <div>
-      <h3>ログイン</h3>
-      <div>
+    <div className="panel">
+      <h3 className="panel__title">ログイン</h3>
+      <div className="panel__item">
         <UserNameInput value={userId} onChange={onChangeUserId} />
+      </div>
+      <div className="panel__item">
         <UserPasswordInput value={password} onChange={onChangePassword} />
+      </div>
+      <div className="panel__button">
         <PrimaryButton text="ログイン" onClick={onClickLogin} />
       </div>
     </div>

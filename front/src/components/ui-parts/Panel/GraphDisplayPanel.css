@@ -1,0 +1,4 @@
+.panel__prefectures {
+  display: flex;
+  flex-wrap: wrap;
+}
