@@ -1,0 +1,11 @@
+.button-primary {
+  cursor: pointer;
+  background-clip: padding-box;
+  background-color: #55b1df;
+  border: 1px solid #55b1df;
+  padding: 8px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 19px;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.3);
+}
