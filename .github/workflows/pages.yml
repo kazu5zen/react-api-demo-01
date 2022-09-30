@@ -9,11 +9,6 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-defaults:
-  run:
-    shell: bash
-    working-directory: ./front
-
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -38,6 +33,7 @@ jobs:
         with:
           node-version: 16.16.0
           cache: "npm"
+          cache-dependency-path: './front/package-lock.json'
       - name: Install dependency
         run: npm ci
       - name: Build
