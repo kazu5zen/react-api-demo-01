@@ -2,6 +2,7 @@
   "name": "front",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://<GITHUB_USER>.github.io/<GITHUB_REPOSITORY_NAME>",
   "dependencies": {
     "@fontsource/noto-sans-jp": "^4.5.11",
     "@testing-library/jest-dom": "^5.14.1",
