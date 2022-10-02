@@ -7,7 +7,7 @@ type Props = {
 
 export const UserPasswordInput: FC<Props> = memo((props) => {
   const { value, onChange } = props;
-  return <input type="pass" placeholder="パスワード" value={value} onChange={onChange} />;
+  return <input type="password" placeholder="パスワード" value={value} onChange={onChange} />;
 });
 
 export default UserPasswordInput;
