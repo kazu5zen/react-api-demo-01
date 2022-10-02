@@ -46,7 +46,18 @@ export const GraphDisplayPanel: FC = memo(() => {
           />
         ))}
       </div>
-      <div>{loading ? <div /> : <TotalPopulationLine totalPopulationList={totalPopulationList} />}</div>
+      <div>
+        {loading ? (
+          <>
+            <div className="full-overlay">
+              <div className="loading-spinner" />
+            </div>
+            <TotalPopulationLine totalPopulationList={totalPopulationList} />
+          </>
+        ) : (
+          <TotalPopulationLine totalPopulationList={totalPopulationList} />
+        )}
+      </div>
     </>
   );
 });
