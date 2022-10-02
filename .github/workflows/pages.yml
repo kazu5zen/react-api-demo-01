@@ -41,6 +41,10 @@ jobs:
         working-directory: ./front
       - name: Build
         run: npm run build
+        env:
+          REACT_APP_USER_ID: ${{ secrets.REACT_APP_USER_ID }}
+          REACT_APP_PASSWORD: ${{ secrets.REACT_APP_PASSWORD }}
+          REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
         working-directory: ./front
       - name: Setup Pages
         uses: actions/configure-pages@v1
